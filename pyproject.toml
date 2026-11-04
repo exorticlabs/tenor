@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tenor-engine"
+version = "1.0.0"
+description = "4D Spatio-Temporal Episodic-Entity Knowledge Graph Memory Architecture with Signed Associative Plasticity (4D-EEKG)"
+readme = "README.md"
+authors = [
+    { name = "Exortic Research Lab", email = "research@exortic.com" }
+]
+license = { text = "MIT" }
+keywords = ["ai", "memory", "agents", "knowledge-graph", "spatio-temporal", "llm", "hebbian"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+]
+
+[project.urls]
+Homepage = "https://exortic.com"
+Repository = "https://github.com/exorticlabs/tenor"
+Documentation = "https://github.com/exorticlabs/tenor/blob/main/docs/RESEARCH_PAPER.md"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tenor*"]
